@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script src="jyufou.js"></script>
+		<script>
+			var access = {
+				accessKeySecret: "accessKeySecret",
+				accessKeyID: "accessKeyID"
+			}
+			yufou.init(access);
+			function finish(data) {
+				var d = JSON.parse(data);
+				console.log(d["userid"]) 
+				console.log(d["username"]) 
+				return null;
+			}
+		</script>
+	</body>
+</html>
